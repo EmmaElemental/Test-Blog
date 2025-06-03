@@ -1,0 +1,60 @@
+.post :hover::after {
+    content: "";
+}
+.post {
+    flex-direction: row;
+    gap: 32px;
+}
+.post {
+    height: auto;
+    cursor: pointer;
+}
+.post h4 {
+    padding: 0;
+    margin: 16px;
+}
+.post p{
+    margin: 16px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 12px;
+    font-weight: 100;
+}
+.post > div {
+    height: 213px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 320px;
+    transition: .3s ease;
+}
+.post > div:hover {
+    cursor: pointer;
+    background-size: 110%;
+    transition: 0.3s ease;
+}
+.post-knuckles {
+    background-image: url(../img/knuckles.webp);
+}
+.post-clown {
+    background-image: url(../img/clown.jpg);
+}
+.post-sonic {
+    background-image: url(../img/sonic.jpg);
+}
+.post-gay {
+    background-image: url(../img/gay.jpeg);
+}
+.post-courage {
+    background-image: url(../img/courage.jpg);
+}
+@media screen and(min-width:1000px) {
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: auto;
+}
+.post,.post > div {
+    width: 250px;
+}
+}

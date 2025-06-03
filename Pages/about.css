@@ -1,0 +1,43 @@
+#House img {
+    filter: grayscale(100%);
+    -webkit-box-reflect: unset;
+    height: fit-content;
+}
+#House img:hover {
+    filter: grayscale(0%);
+    transition: 0.3s;
+}
+.img-description{
+    background: transparent ;
+    height: auto;
+    transition: 0.3s ease;
+}
+.img-description p {
+   text-align: left;
+   font-size: 1rem;
+   padding: 16px 16px 36px 16px;
+   color: #888;
+}
+
+.img-description:hover {
+   background: rgba(224, 192, 169, 0.63);
+   transition: 0.3s ease;
+}
+
+.img-description p::selection{
+   color: #000;
+}
+
+@media screen and (max-width: 860px) {
+  #House img {
+    display: block;
+  }
+  #House {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-description::before {
+    height: unset;
+  }
+}
